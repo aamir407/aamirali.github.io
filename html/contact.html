@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="utf-8">
+  <title>Aamir' Portfolio</title>
+  <link rel="stylesheet" href="../css/style.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+    <header>
+        <img id="logo" src="../images/logo.png" alt="logo_img">
+        <nav>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="degree.html">Degree Programme</a></li>
+            <li><a href="skills.html">SGA & Skills</a></li>
+            <li><a href="quiz.html">Quiz</a></li>
+          </ul>
+        </nav>
+    </header>
+
+    <main>
+        <div class="parentContactDiv"> <!--Create the parent div to structure all main elements-->
+            <div class="welcomeDiv">
+                <h1>Have a question?</h1>
+                <p>Feel free to contact us if you have any question, suggestions or concerns. I will do my best to make sure that all your questions are answered. Kindly allow 2-3 businesses for the inquiries to be processed Thank you for your patience!</p>
+            </div>
+            
+            <div class="contactPair">
+              <div class="addressDiv"> <!--Create the div to display contact details-->
+                <h1>Address</h1>
+                <p>The University of Sheffield <br>
+                    Western Bank <br>
+                    Sheffield <br>
+                    S10 2TN</p>
+            </div>
+
+            <div class="contactDiv"> <!--Create the div for the contact form-->
+                <h1>Contact Us</h1>
+                <form name="myform" action="mailto:amohamedthahirali1@sheffield.ac.uk?subject=Test Email" enctype="text/plain" method="post" onsubmit="alert('Email should open now...');">
+                    <!-- Create a form that mails the response to the given e-mail -->
+            
+                <p>
+                  <label for="from">Your name:</label>
+                  <input type="text" name="from" id="from" maxlength="40" size="20" placeholder="type your name..." required="">
+                </p>
+            
+                <p>
+                  <label for="email">Your e-mail:</label>
+                  <input type="email" name="email" id="email" placeholder="type your email..." maxlength="40" size="20" required="">
+                </p>
+                
+                <p>
+                  <label for="comments">Your comments:</label>
+                  <textarea name="comments" id="comments" placeholder="type your comments..." rows="5" cols="30"></textarea>
+                </p>
+                
+                <p>
+                  <input type="submit" name="submit" id="submit" value="Submit">
+                  <input type="reset">
+                </p>
+            
+            </form>
+            </div>
+            </div> <!--Create a pair to store the contact cards-->
+            
+        </div>
+    </main>
+    <footer>
+        <div class="footer">
+          <p>&copy An aspiring Programmer, Aamir M. Ali</p>
+          <div></div>
+          <ul>
+            <li><strong><a href="accessiblity.html">Accessibility</a></strong></li>
+            <li><strong><a href="legal.html">Legal&Security</a></strong></li>
+            <li><strong><a href="design.html">Design</a></strong></li>
+            <li><strong><a href="testing.html">Testing</a></strong></li>
+            <li><strong><a href="contact.html">Contact</a></strong></li>  
+        </ul>
+          <div id="button">
+            <p><a href="mailto:amohamedthahirali1@sheffield.ac.uk">Talk to Me</a></p>
+          </div>
+          
+        </div>
+      </footer>
+</body>

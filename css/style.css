@@ -1,0 +1,1322 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;600;700;800&display=swap');
+/* DONT CHANGE THIS - NAJAAZ */
+
+#logo{
+  margin: 5px auto;
+  width: 200px;
+}
+*{
+  font-family: 'Montserrat', sans-serif;; // DONT CHANGE THIS EITHER!!
+}
+body{
+  margin: 0;
+  /* background-image: url('../images/background.jpg'); */
+  background-image: linear-gradient(135deg, #a8dadc 0%, #f1faee 100%);
+  min-width: 400px;
+}
+header{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+nav{
+  background-color: #1D3557;
+  border-radius: 20px;
+  margin: 0 10px;
+}
+
+nav ul{
+  display: flex;
+  justify-content: space-around;
+  padding: 5px;
+  margin: 0;
+
+}
+
+nav ul li{
+  display: inline;
+  list-style: none;
+}
+
+nav ul li a{
+  text-decoration: none;
+  font-size: 15px;
+  transition: font-size 0.5s ease;
+}
+
+nav a:link { color: white; }
+
+nav a:visited { color: #e5e5e5; }
+
+nav a:hover { font-size: 1.2em; color: #E63946;}
+
+/* MAIN */
+
+.sectionOne{
+  display: flex;
+  justify-content: space-around;
+  padding: 10px;
+}
+
+.sectionOne img{
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  padding-top: 10px;
+}
+
+
+#introtext h1{
+  margin: 0;
+}
+#introtext p{
+  margin: 5px;
+  text-align: left;
+}
+.parentDivTwo{
+  display: flex;
+  padding: 10px;
+}
+
+.sectionTwo{
+  background-color: #F1FAEE;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 auto;
+  padding: 10px;
+  border: solid 2px #1D3557;
+  border-radius: 10px;
+  width: 80%;
+}
+
+.sectionTwo h1{
+  margin: 0;
+  text-align: center;
+}
+
+.parentDivThree{
+  display: flex;
+  padding: 10px;
+}
+
+.sectionThree{
+  text-align: center;
+  background-color: #F1FAEE;
+  display: inline-block;
+  margin: 0 auto;
+  padding: 10px;
+  border: solid 2px #1D3557;
+  border-radius: 10px
+}
+
+.sectionThree h1{
+  margin: 0;
+}
+
+.sectionThree p{
+  margin: 0;
+}
+.parentDivFour{
+  display: flex;
+  background-color: #1D3557;
+  margin: 10px 0;
+}
+
+.parentDivFour h1{
+margin: 0 auto;
+color: #F1FAEE;
+}
+
+.aboutMe{
+  display: flex;
+  flex-direction: column;
+}
+
+.parentDivFive{
+  display: flex;
+  padding: 10px;
+}
+
+
+.sectionFive{
+  text-align: center;
+  background-color: #F1FAEE;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 auto;
+  padding: 10px;
+  border: solid 2px #1D3557;
+  border-radius: 10px;
+  width: 80%;
+}
+
+.sectionFive h1{
+  margin: 0;
+}
+
+.parentDivSix{
+  display: flex;
+  padding: 10px;
+}
+
+.sectionSix{
+  background-color: #F1FAEE;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 auto;
+  padding: 10px;
+  border: solid 2px #1D3557;
+  border-radius: 10px;
+  width: 80%;
+}
+
+.sectionSix h1{
+  margin: 0;
+}
+
+.sectionSix p{
+  text-align: center;
+}
+footer{
+  background-color: #A8DADC;
+}
+
+footer a{
+  text-decoration: none;
+  padding: 5px;
+}
+
+footer a:link {color: #F1FAEE;}
+
+.footDiv{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.footDiv p{
+  margin: 5px;
+}
+
+#button{
+  display: flex;
+  background-color: #E63946;
+  border: solid 2px #1D3557;
+  border-radius: 10px;
+  padding: 5px;
+  margin: 10px 0;
+}
+
+/* Media query for tablets to display first two cards horizontally and third card under */
+/* @media screen and (min-width: 600px){
+  .tabletDiv{
+    flex-direction: row;
+  }
+} */
+
+
+/* Media query for desktop*/
+@media screen and (min-width: 1200px){
+  .sectionOne{
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .sectionOne img{ /*Add a border to the profile image on a desktop view*/
+    border: solid 2px black;
+    padding: 0px;
+  }
+
+  .aboutMe{
+    flex-direction: row;
+    justify-content: space-around;
+  }
+
+/* Configure the container to continue diplaying items vertically on mobile */
+
+  .parentDivFive{
+    width: 25%;
+  }
+  .parentDivTwo{
+    width: 25%;
+  }
+  .parentDivSix{
+    width: 25%;
+  }
+
+  #introtext{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+/* DEGREE */
+/* Set the div container's display type to flex so all items inside can be easily centered and aligned vertically */
+.boxOne{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: solid 1px black;
+  margin: 10px;
+}
+
+/* Edit the properties of the paragraph and header element within the div to make them visually pleasing */
+.boxOne p{
+  text-align: center;
+  margin: 0 10px;
+}
+
+.boxOne h1{
+  text-align: center;
+}
+
+.boxOne button{
+  margin: 10px;
+  font-size: 1.2em;
+  border-radius: 10px;
+  color: azure;
+  background-color: #E63946;
+  padding: 5px;
+  border-color:#1D3557;
+}
+
+.boxOne h1{
+  margin: 15px 0 10px;
+}
+
+/* Configure properties for the parent Div that is going to contain all the information cards about the Modules. */
+.allModules{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+
+/* Configure property for module1 card that will contain a photo, some text, and a button in a horizontal manner */
+.pairOne{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.module1{
+  background-color: #F1FAEE;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  margin: 20px 0;
+  padding: 10px;
+  border: solid 2px #1D3557;
+  border-radius: 10px;
+  width: 80%;
+}
+
+.module1 img{
+  height: 150px;
+  border: solid black 1px;
+  border-radius: 50%;
+}
+
+.module1 button{
+  background-color: #A8DADC;
+  width: 100%;
+  height: 100%;
+  border-radius: 5px;
+  font-size: 1.2em;
+}
+
+/* Define the properties of the elements in the text box to make it visually pleasing */
+.textBox1{
+  margin: 10px;
+}
+
+.textBox1 h3{
+  margin: 0;
+  text-align: center;
+}
+
+.textBox1 p{
+  margin: 0;
+  text-align: center;
+}
+
+/* Configure property for module2 card that will contain a photo, some text, and a button in a horizontal manner */
+.module2{
+  background-color: #F1FAEE;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  margin: 20px 0;
+  padding: 10px;
+  border: solid 2px #1D3557;
+  border-radius: 10px;
+  width: 80%;
+}
+
+.module2 img{
+  height: 150px;
+  border: solid black 1px;
+  border-radius: 50%;
+}
+
+.module2 button{
+  background-color: #A8DADC;
+  width: 100%;
+  height: 100%;
+  border-radius: 5px;
+  font-size: 1.2em;
+}
+
+/* Define the properties of the elements in the text box to make it visually pleasing */
+.textBox2{
+  margin: 10px;
+}
+
+.textBox2 h3{
+  margin: 0;
+  text-align: center;
+}
+
+.textBox2 p{
+  margin: 0;
+  text-align: center;
+}
+
+/* Configure property for module3 card that will contain a photo, some text, and a button in a horizontal manner */
+.pairTwo{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.module3{
+  background-color: #F1FAEE;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  margin: 20px 0;
+  padding: 10px;
+  border: solid 2px #1D3557;
+  border-radius: 10px;
+  width: 80%;
+}
+
+.module3 img{
+  height: 150px;
+  border: solid black 1px;
+  border-radius: 50%;
+}
+
+.module3 button{
+  background-color: #A8DADC;
+  width: 100%;
+  height: 100%;
+  border-radius: 5px;
+  font-size: 1.2em;
+}
+
+/* Define the properties of the elements in the text box to make it visually pleasing */
+.textBox3{
+  margin: 10px;
+}
+
+.textBox3 h3{
+  margin: 0;
+  text-align: center;
+}
+
+.textBox3 p{
+  margin: 0;
+  text-align: center;
+}
+
+/* Configure property for module4 card that will contain a photo, some text, and a button in a horizontal manner */
+.module4{
+  background-color: #F1FAEE;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  margin: 20px 0;
+  padding: 10px;
+  border: solid 2px #1D3557;
+  border-radius: 10px;
+  width: 80%;
+}
+
+.module4 img{
+  height: 150px;
+  border: solid black 1px;
+  border-radius: 50%;
+}
+
+.module4 button{
+  background-color: #A8DADC;
+  width: 100%;
+  height: 100%;
+  border-radius: 5px;
+  font-size: 1.2em;
+}
+
+/* Define the properties of the elements in the text box to make it visually pleasing */
+.textBox4{
+  margin: 10px;
+}
+
+.textBox4 h3{
+  margin: 0;
+  text-align: center;
+}
+
+.textBox4 p{
+  margin: 0;
+  text-align: center;
+}
+
+/* Configure property for module5 card that will contain a photo, some text, and a button in a horizontal manner */
+.pairThree{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+
+.module5{
+  background-color: #F1FAEE;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  margin: 20px 0;
+  padding: 10px;
+  border: solid 2px #1D3557;
+  border-radius: 10px;
+  width: 80%;
+}
+
+.module5 img{
+  height: 150px;
+  border: solid black 1px;
+  border-radius: 50%;
+}
+
+.module5 button{
+  background-color: #A8DADC;
+  width: 100%;
+  height: 100%;
+  border-radius: 5px;
+  font-size: 1.2em;
+}
+
+/* Define the properties of the elements in the text box to make it visually pleasing */
+.textBox5{
+  margin: 10px;
+}
+
+.textBox5 h3{
+  margin: 0;
+  text-align: center;
+}
+
+.textBox5 p{
+  margin: 0;
+  text-align: center;
+}
+
+/* Configure property for module6 card that will contain a photo, some text, and a button in a horizontal manner */
+.module6{
+  background-color: #F1FAEE;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  margin: 20px 0;
+  padding: 10px;
+  border: solid 2px #1D3557;
+  border-radius: 10px;
+  width: 80%;
+}
+
+.module6 img{
+  height: 150px;
+  border: solid black 1px;
+  border-radius: 50%;
+}
+
+.module6 button{
+  background-color: #A8DADC;
+  width: 100%;
+  height: 100%;
+  border-radius: 5px;
+  font-size: 1.2em;
+}
+
+/* Define the properties of the elements in the text box to make it visually pleasing */
+.textBox6{
+  margin: 10px;
+}
+
+.textBox6 h3{
+  margin: 0;
+  text-align: center;
+}
+
+.textBox6 p{
+  margin: 0;
+  text-align: center;
+}
+
+/* Configure property for module7 card that will contain a photo, some text, and a button in a horizontal manner */
+.module7{
+  background-color: #F1FAEE;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  margin: 20px 0;
+  padding: 10px;
+  border: solid 2px #1D3557;
+  border-radius: 10px;
+  width: 80%;
+}
+
+.module7 img{
+  height: 150px;
+  border: solid black 1px;
+  border-radius: 50%;
+}
+
+.module7 button{
+  background-color: #A8DADC;
+  width: 100%;
+  height: 100%;
+  border-radius: 5px;
+  font-size: 1.2em;
+}
+
+/* Define the properties of the elements in the text box to make it visually pleasing */
+.textBox7{
+  margin: 10px;
+}
+
+.textBox7 h3{
+  margin: 0;
+  text-align: center;
+}
+
+.textBox7 p{
+  margin: 0;
+  text-align: center;
+}
+
+/* Define Media queries to deliver the website on TABLETS and DESKTOP  */
+@media screen and (min-width: 600px){
+  /* Get the pair divs to display two module cards in one row on tablets */
+  .pairOne{
+    flex-direction: row;
+  }
+  .pairTwo{
+    flex-direction: row;
+  }
+  .pairThree{
+    flex-direction: row;
+  }
+
+  /* Include margins for the module cards so they are evenly spread out */
+  .module1{
+    margin: 10px;
+  }
+  .module2{
+    margin: 10px;
+  }
+  .module3{
+    margin: 10px;
+  }
+  .module4{
+    margin: 10px;
+  }
+  .module5{
+    margin: 10px;
+  }
+  .module6{
+    margin: 10px;
+  }
+  .module7{
+    margin: 10px;
+  }
+}
+
+/* QUIZ PAGE */
+
+/* Configure the div to display the intro title, description and the 'Start Quiz' anchor button in a visually pleasing way */
+.introContent{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px;
+}
+
+.introContent h1{
+  margin-bottom: 0;
+}
+
+.introContent p{
+  text-align: center;
+}
+
+.introContent a:link{ color: black; text-decoration: none;}
+
+/* Configure the parent div that contains all the questions into a flex box, and center all its elements */
+.allQuestions{
+  display: flex;
+  flex-direction: column;
+}
+
+/* Configure the properties for all the question cards in a visually pleasing format */
+
+.row1{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Make question1 card visually pleasing */
+.question1{
+  text-align: center;
+  background-color: #F1FAEE;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 10px;
+  padding: 10px;
+  border: solid 2px #1D3557;
+  border-radius: 10px;
+  width: 80%;
+}
+#content1{
+  display: flex;
+  flex-direction: column;
+}
+
+/* Make the image smaller */
+.question1 img{
+width: 150px;
+
+}
+
+#answer1{
+  background-color: #E63946;
+  color: azure;
+  margin: 10px;
+  font-size: 1.2em;
+  border-radius: 5px;
+}
+
+#answer1 h4{
+  margin: 10px;
+}
+
+/* Design the answer that is going to be hidden first */
+#reveal1{
+  opacity: 0;
+  margin: 5px;
+  font-size: 1.2em;
+  color: black;
+}
+
+/* Make the hover button disapper when the mouse hovers */
+#answer1:hover{
+opacity: 0;
+transition: all 0.3s ease;
+}
+
+#answer1:hover #reveal1{
+  opacity: 100;
+  transition: all 0.3s ease;
+}
+
+/* Make the question2 card visually pleasing. Add borders, background color, size the images and text etc. */
+.question2{
+  text-align: center;
+  background-color: #F1FAEE;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 10px;
+  padding: 10px;
+  border: solid 2px #1D3557;
+  border-radius: 10px;
+  width: 80%;
+}
+#content2{
+  display: flex;
+  flex-direction: column;
+}
+
+/* Make the image smaller */
+.question2 img{
+width: 150px;
+
+}
+
+#answer2{
+  background-color: #E63946;
+  color: azure;
+  margin: 10px;
+  font-size: 1.2em;
+  border-radius: 5px;
+} 
+
+#answer2 h4{
+  margin: 10px;
+}
+
+/* Configure layouts for question 3 and question 4 */
+.row2{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Make question3 card visually pleasing */
+.question3{
+  text-align: center;
+  background-color: #F1FAEE;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 10px;
+  padding: 10px;
+  border: solid 2px #1D3557;
+  border-radius: 10px;
+  width: 80%;
+}
+#content3{
+  display: flex;
+  flex-direction: column;
+}
+
+/* Make the image smaller */
+.question3 img{
+width: 150px;
+
+}
+
+#answer3{
+  background-color: #E63946;
+  color: azure;
+  margin: 10px;
+  font-size: 1.2em;
+  border-radius: 5px;
+}
+
+#answer3 h4{
+  margin: 10px;
+}
+
+/* Make the question4 card visually pleasing. Add borders, background color, size the images and text etc. */
+.question4{
+  text-align: center;
+  background-color: #F1FAEE;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 10px;
+  padding: 10px;
+  border: solid 2px #1D3557;
+  border-radius: 10px;
+  width: 80%;
+}
+#content4{
+  display: flex;
+  flex-direction: column;
+}
+
+/* Make the image smaller */
+.question4 img{
+width: 150px;
+}
+
+#answer4{
+  background-color: #E63946;
+  color: azure;
+  margin: 10px;
+  font-size: 1.2em;
+  border-radius: 5px;
+} 
+
+#answer4 h4{
+  margin: 10px;
+}
+
+
+/* Set the layout for Tablets and PC. Make two question cards appear in one row. */
+@media screen and (min-width: 576px){
+  .row1{
+    flex-direction: row;
+    justify-content: space-around;
+  }
+  .row2{
+    flex-direction: row;
+    justify-content: space-around;
+  }
+}
+
+/* CONTACT PAGE */
+/* Align all items of the parent container vertically */
+.parentContactDiv{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Style the welcome div so all the intro text is centered and visually pleasing */
+.welcomeDiv{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.welcomeDiv h1{
+  margin: 10px;
+}
+
+.welcomeDiv p{
+  margin: 0 0 10px 0;
+}
+
+/* Set the div that holds the contact cards to display items in a column manner */
+.contactPair{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+
+/* Style the div that contains the University Address */
+.addressDiv{
+  background-color: #F1FAEE;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  margin: 20px 0;
+  padding: 10px;
+  border: solid 2px #1D3557;
+  border-radius: 10px;
+  width: 80%;
+  text-align: center;
+}
+
+.addressDiv h1{
+  margin: 0;
+}
+
+.addressDiv p{
+  font-size: 1.3em;
+  margin: 0;
+}
+
+/* Style the div that contains the contact form */
+.contactDiv{
+  background-color: #F1FAEE;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  margin: 0 0 20px 0;
+  padding: 10px;
+  border: solid 2px #1D3557;
+  border-radius: 10px;
+  width: 80%;
+  text-align: center;
+}
+
+.contactDiv h1{
+  margin: 0;
+}
+
+/* Set a media query for tablets and PC so contact cars are displayed in a horizontal manner */
+@media screen and (min-width: 600px){
+  .contactPair{
+    flex-direction: row;
+    align-items: baseline;
+    align-content: space-between;
+  }
+
+  .addressDiv{
+    margin: 20px;
+  }
+}
+
+/* SGA & MySkills Page */
+
+/* Configure the properties of the SGA div that contains information about SGA */
+.SGA{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: solid 1px;
+  border-color: #1D3557;
+  justify-content: space-around;
+  text-align: center;
+  color: black;
+  margin: 10px;
+}
+
+.SGA h1{
+  margin: 0px 0px;
+}
+
+.SGA p{
+  margin: 5px;
+}
+
+.SGA button{
+  margin: 10px;
+  font-size: 1.2em;
+  border-radius: 10px;
+  color: azure;
+  background-color: #E63946;
+  padding: 5px;
+  border-color:#1D3557;
+}
+
+/* Make the contentPair div display SGA and myskills information vertically on Mobile */
+.contentPair{
+  display: flex;
+  flex-direction: column;
+}
+
+
+/* Configure the properties of the MySkills div that contains information about SGA */
+.myskills{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: solid 1px;
+  border-color: #1D3557;
+  justify-content: space-around;
+  text-align: center;
+  color: black;
+  margin: 10px;
+}
+
+.myskills h1{
+  margin: 0px 0px;
+}
+
+.myskills p{
+  margin: 5px;
+}
+
+.myskills button{
+  margin: 10px;
+  font-size: 1.2em;
+  border-radius: 10px;
+  color: azure;
+  background-color: #E63946;
+  padding: 5px;
+  border-color:#1D3557;
+}
+
+/* Make the lessonsPair div display lessons information vertically on Mobile */
+.lessonsPair{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Configure the div that displays "Lessons" title */
+.titleLessons{
+  display: flex;
+  background-color: #1D3557;
+  margin: 0;
+}
+
+.titleLessons h1{
+margin: 0 auto;
+color: #F1FAEE;
+}
+
+/* Configure the properties of the lessons cards to make them visually pleasing */
+.lesson1{
+  text-align: center;
+  background-color: #F1FAEE;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 20px;
+  padding: 10px;
+  border: solid 2px #1D3557;
+  border-radius: 10px;
+  width: 80%;
+}
+
+.lesson1 h4{
+  margin: 0;
+}
+
+.lesson2{
+  text-align: center;
+  background-color: #F1FAEE;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 20px;
+  padding: 10px;
+  border: solid 2px #1D3557;
+  border-radius: 10px;
+  width: 80%;
+}
+
+.lesson2 h4{
+  margin: 0;
+}
+
+.lesson3{
+  text-align: center;
+  background-color: #F1FAEE;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 20px;
+  padding: 10px;
+  border: solid 2px #1D3557;
+  border-radius: 10px;
+  width: 80%;
+}
+
+.lesson3 h4{
+  margin: 0;
+}
+
+
+
+
+
+/* Display the SGA, MySkills and lessons cards in a row on desktop and tablet */
+@media screen and (min-width: 600px){
+.contentPair{
+  flex-direction: row;
+}
+
+.lessonsPair{
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: flex-start;
+}
+
+}
+
+/* ACCESSIBILITY */
+.parentDivStatements{
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  font-size: 1em;
+}
+
+.accessStatement{
+  display: flex;
+  background-color: #1D3557;
+  margin: 20px 0 0 0;
+}
+
+.accessStatement h1{
+  margin: 0 auto;
+  color: #F1FAEE;
+  }
+
+/* Style the statement1 card to make it visually pleasing */
+
+  .statement1{
+    background-color: #F1FAEE;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 10px auto;
+    font-size: 1.2em;
+    padding: 20px;
+    border: solid 2px #1D3557;
+    border-radius: 10px;
+    width: 80%;
+  }
+  
+  .statement1 h1{
+    margin: 0;
+  }
+
+  .statement1 ul{
+   text-align: left;
+  }
+  
+  .statement1 h4{
+    margin: 0;
+  }
+
+
+  .statement p{
+    text-align: center;
+    margin: 0px;
+  }
+
+/* Configure the container of statement cards to display vertically by default */
+.statementPair{
+  display: flex;
+  flex-direction: column;
+}
+
+/* Style the statement2 card to make it visually pleasing */
+
+.statement2{
+  background-color: #F1FAEE;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 10px auto;
+  padding: 20px;
+  border: solid 2px #1D3557;
+  border-radius: 10px;
+  width: 80%;
+}
+
+.statement2 h1{
+  margin: 0;
+}
+
+.statement2 ul{
+ text-align: left;
+}
+
+.statement2 h4{
+  margin: 0;
+}
+
+.statement2 p{
+  margin: 0px;
+}
+
+/* Style the statement3 card to make it visually pleasing */
+
+.statement3{
+  background-color: #F1FAEE;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 10px auto;
+  padding: 20px;
+  border: solid 2px #1D3557;
+  border-radius: 10px;
+  width: 80%;
+}
+
+.statement3 h1{
+  margin: 0;
+}
+
+.statement3 ul{
+ text-align: left;
+}
+
+.statement3 h4{
+  margin: 0;
+}
+
+.statement3 p{
+  margin: 0px;
+}
+
+/* Style the statement4 card to make it visually pleasing */
+
+.statement4{
+  background-color: #F1FAEE;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 10px auto;
+  padding: 20px;
+  border: solid 2px #1D3557;
+  border-radius: 10px;
+  width: 80%;
+}
+
+.statement4 h1{
+  margin: 0;
+}
+
+.statement4 ul{
+ text-align: left;
+}
+
+.statement4 h4{
+  margin: 0;
+}
+
+.statement4 p{
+  margin: 
+  0px;
+}
+
+/* Configure the RWD layout for PC and Tablets */
+@media screen and (min-width: 600px){
+.statementPair{
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+}
+
+
+/* Set the properties for the flex box in the footer div */
+.footer{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Make the footer display its contents vertically  */
+
+footer ul{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 5px;
+  margin: 0;
+  background-color: #1D3557;
+  border-radius: 20px;
+  width: 80%;
+}
+
+footer ul li{
+  list-style: none;
+  font-size: 0.5em;
+}
+
+footer ul li a{
+  text-decoration: none;
+  font-size: 15px;
+  transition: font-size 0.5s ease;
+}
+
+footer a:link { color: white; }
+
+footer a:visited { color: #e5e5e5; }
+
+footer a:hover { font-size: 2.5em; color: #E63946;}
+
+/* Make the footer display its contents horizontally on a PC or a tablet */
+@media screen and (min-width: 600px){
+  footer ul{
+    flex-direction: row;
+    justify-content: space-around;
+  }
+}
